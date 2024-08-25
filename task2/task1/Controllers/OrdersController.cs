@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using task1.Models;
 
 namespace task1.Controllers
@@ -88,6 +89,14 @@ namespace task1.Controllers
             return NotFound();
         }
 
+
+        [HttpGet("order/{name}")]
+        public IActionResult Name(string name) {
+            var x = _db.Users.FirstOrDefault(p => p.Username == name);
+            if (x != null)
+              return Ok(x);
+        return NotFound();
+        }
 
         [Route("/api/Orders/DeleteOrder/{id}")]
         [HttpDelete]

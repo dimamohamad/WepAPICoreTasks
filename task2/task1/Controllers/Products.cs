@@ -42,6 +42,19 @@ namespace task1.Controllers
             return Ok(product);
         }
 
+
+        [HttpGet("Products/productsbycategoryid/{id}")]
+        public IActionResult GetbyId(int id)
+        {
+            if (id >= 0)
+            {
+                var product = _db.Products.Where(p => p.CategoryId == id).ToList();
+
+                return Ok(product);
+            }
+            return NotFound();
+        }
+
         [HttpGet("{id:int:min(5)}")]
         public IActionResult GetById(int id)
         {
