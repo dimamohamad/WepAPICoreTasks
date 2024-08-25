@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task2\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task2\\task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task2\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task2\\task1\\task1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -62,12 +62,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
@@ -92,18 +88,47 @@
               "ViewState": "AQIAAFEAAAAAAAAAAAAuwFwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T12:30:44.672Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Products.cs",
+              "RelativeDocumentMoniker": "task1\\Controllers\\Products.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Products.cs",
+              "RelativeToolTip": "task1\\Controllers\\Products.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAADwv8oAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T14:00:25.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Program.cs",
+              "RelativeDocumentMoniker": "task1\\Program.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Program.cs",
+              "RelativeToolTip": "task1\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T13:48:52.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Categories.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Categories.cs",
               "RelativeDocumentMoniker": "task1\\Controllers\\Categories.cs",
               "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Categories.cs",
               "RelativeToolTip": "task1\\Controllers\\Categories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAqwEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T13:52:14.241Z",
               "EditorCaption": ""
@@ -118,8 +143,7 @@
               "RelativeToolTip": "task1\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:24:55.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T12:24:55.087Z"
             },
             {
               "$type": "Document",
@@ -155,34 +179,7 @@
               "RelativeToolTip": "task1\\task1.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-19T13:52:35.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Products.cs",
-              "RelativeDocumentMoniker": "task1\\Controllers\\Products.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Controllers\\Products.cs",
-              "RelativeToolTip": "task1\\Controllers\\Products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:00:25.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Program.cs",
-              "RelativeDocumentMoniker": "task1\\Program.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\Program.cs",
-              "RelativeToolTip": "task1\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:48:52.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T13:52:35.653Z"
             },
             {
               "$type": "Document",
@@ -193,8 +190,7 @@
               "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task2\\task1\\task1.csproj",
               "RelativeToolTip": "task1\\task1.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T19:13:47.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T19:13:47.38Z"
             },
             {
               "$type": "Document",
@@ -206,8 +202,7 @@
               "RelativeToolTip": "task1\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAkwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:32:11.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T14:32:11.981Z"
             },
             {
               "$type": "Document",

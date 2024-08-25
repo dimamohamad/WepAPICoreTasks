@@ -28,11 +28,12 @@ namespace task1.Controllers
 
         [Route("/api/Products/GetAll")]
         [HttpGet]
-        public IActionResult GetALL() { 
-         var products =_db.Products.ToList();
-        return Ok(products);
+        public IActionResult GetALL()
+        {
+            var products = _db.Products.ToList();
+            return Ok(products);
         }
-      
+
         [HttpGet("id")]
         public IActionResult Get(int id)
         {
@@ -40,6 +41,19 @@ namespace task1.Controllers
             var product = _db.Products.Where(p => p.ProductId == id).FirstOrDefault();
 
             return Ok(product);
+        }
+
+
+        [HttpGet("Products/productsbycategoryid/{id}")]
+        public IActionResult GetbyId(int id)
+        {
+            if (id >= 0)
+            {
+                var product = _db.Products.Where(p => p.CategoryId == id).ToList();
+
+                return Ok(product);
+            }
+            return NotFound();
         }
 
         [HttpGet("{id:int:min(5)}")]
@@ -69,7 +83,7 @@ namespace task1.Controllers
 
 
 
-       
+
         [HttpDelete("id1")]
         public IActionResult Delete(int id1)
         {
@@ -86,8 +100,9 @@ namespace task1.Controllers
 
         [Route("/api/Products/DeleteProduct/{id}")]
         [HttpDelete]
-        public IActionResult DeleteById(int id) { 
-           var product = _db.Products.Find(id);
+        public IActionResult DeleteById(int id)
+        {
+            var product = _db.Products.Find(id);
             if (product != null)
             {
                 _db.Products.Remove(product);
@@ -105,13 +120,14 @@ namespace task1.Controllers
         }
 
         [HttpGet("{id:int:max(10)}/{name}")]
-        public IActionResult Name(int id,string name)  {
-            
-            var products =_db.Products.Where(p=>p.ProductName == name&&p.ProductId==id).FirstOrDefault();
+        public IActionResult Name(int id, string name)
+        {
+
+            var products = _db.Products.Where(p => p.ProductName == name && p.ProductId == id).FirstOrDefault();
             if (products != null)
                 return Ok($"the product of the {id} is {name}");
-            
-            return NotFound(); 
+
+            return NotFound();
         }
 
 
@@ -143,7 +159,7 @@ namespace task1.Controllers
 
 
 
-       
+
 
 
 
