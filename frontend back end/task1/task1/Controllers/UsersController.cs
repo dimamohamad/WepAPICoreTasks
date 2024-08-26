@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using task1.DTOs;
 using task1.Models;
 
 namespace task1.Controllers
@@ -163,6 +164,55 @@ namespace task1.Controllers
             return NotFound();
 
 
+
+        }
+
+
+
+        [HttpPost]
+        public IActionResult postuser([FromForm] userform user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+
+            }
+            var x = new User
+            {
+                Email = user.Email,
+                Username = user.Username,
+                Password = user.Password,
+
+
+            };
+          
+
+
+            _db.Users.Add(x);
+            _db.SaveChanges();
+            return Ok(x);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UPDATE([FromForm] userform user, int id)
+        {
+
+
+
+            var c = _db.Users.FirstOrDefault(l => l.UserId == id);
+            c.Username = user.Username;
+            c.Email = user.Email;
+            c.Password = user.Password;
+
+            _db.Users.Update(c);
+            _db.SaveChanges();
+
+
+
+            
+            return Ok();
+
+            //ضيفي كود الصورة 
 
         }
     }

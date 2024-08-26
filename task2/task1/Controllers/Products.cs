@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using task1.Models;
 
 namespace task1.Controllers
@@ -155,8 +156,12 @@ namespace task1.Controllers
         }
 
 
-
-       
+        [HttpGet("/price")]
+        public IActionResult Price()
+        {
+            var products = _db.Products.OrderByDescending(p => p.Price).ToList();
+            return Ok(products);
+        }
 
 
 

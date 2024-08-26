@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using task1.DTOs;
+
 using task1.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace task1.Controllers
 {
@@ -41,6 +44,9 @@ namespace task1.Controllers
 
         //    return Ok(categories);
         //}
+
+
+
         [HttpGet("{id:min(5)}")]
         public IActionResult Get(int id)
         {
@@ -168,6 +174,69 @@ namespace task1.Controllers
 
 
            
+        }
+
+
+        [HttpPost]
+        public IActionResult postcat([FromForm] categoryform cat) {
+            if (!ModelState.IsValid) {
+            return BadRequest();
+            
+            }
+            var x = new Category
+            {
+                CategoryImage = cat.CategoryImage.FileName,
+                CategoryName = cat.CategoryName,
+
+
+            };
+            var ImagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+            if (!Directory.Exists(ImagesFolder))
+            {
+                Directory.CreateDirectory(ImagesFolder);
+            }
+            var imageFile = Path.Combine(ImagesFolder, cat.CategoryImage.FileName);
+            using (var stream = new FileStream(imageFile, FileMode.Create))
+            {
+                cat.CategoryImage.CopyToAsync(stream);
+            }
+
+
+            _db.Categories.Add(x);
+            _db.SaveChanges();
+            return Ok(x);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UPDATE([FromForm] categoryform categDto, int id)
+        {
+
+
+
+            var c = _db.Categories.FirstOrDefault(l => l.CategoryId == id);
+            c.CategoryName = categDto.CategoryName;
+            c.CategoryImage = categDto.CategoryImage.FileName;
+
+            _db.Categories.Update(c);
+            _db.SaveChanges();
+
+
+
+            var ImagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+            if (!Directory.Exists(ImagesFolder))
+            {
+                Directory.CreateDirectory(ImagesFolder);
+            }
+            var imageFile = Path.Combine(ImagesFolder, categDto.CategoryImage.FileName);
+            using (var stream = new FileStream(imageFile, FileMode.Create))
+            {
+                categDto.CategoryImage.CopyToAsync(stream);
+            }
+
+            return Ok();
+
+            //ضيفي كود الصورة 
+
         }
     }
 }

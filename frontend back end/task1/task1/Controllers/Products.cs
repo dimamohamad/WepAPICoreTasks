@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using task1.DTOs;
 using task1.Models;
 
 namespace task1.Controllers
@@ -159,9 +160,78 @@ namespace task1.Controllers
 
 
 
+        [HttpGet("/price")]
+        public IActionResult Price()
+        {
+            var products = _db.Products.OrderByDescending(p => p.Price).ToList();
+            return Ok(products);
+        }
+        [HttpPost]
+        public IActionResult Post([FromForm] productform po) {
+
+            if (!ModelState.IsValid) {
+                return BadRequest();
+            }
+            var x = new Product
+            {
+                ProductName = po.ProductName,
+                Price = po.Price,
+                ProductImage = po.ProductImage.FileName,
+                Description = po.Description,
+                CategoryId=po.CategoryId,
+            };
+            _db.Products.Add(x);
+            _db.SaveChanges();
+
+            var ImagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+            if (!Directory.Exists(ImagesFolder))
+            {
+                Directory.CreateDirectory(ImagesFolder);
+            }
+            var imageFile = Path.Combine(ImagesFolder, po.ProductImage.FileName);
+            using (var stream = new FileStream(imageFile, FileMode.Create))
+            {
+                po.ProductImage.CopyToAsync(stream);
+            }
+            return Ok();
+
+        
+        }
+
+
+        [HttpPut("{id}")]
+        public IActionResult UPDATE([FromForm] productform productco, int id)
+        {
 
 
 
+            var c = _db.Products.FirstOrDefault(l => l.ProductId == id);
+            c.ProductName = productco.ProductName;
+            c.ProductImage = productco.ProductImage.FileName;
+            c.Description = productco.Description; 
+            c.CategoryId = productco.CategoryId;
+            c.Price = productco.Price;
+            _db.Products.Update(c);
+            _db.SaveChanges();
+
+
+
+            var ImagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+            if (!Directory.Exists(ImagesFolder))
+            {
+                Directory.CreateDirectory(ImagesFolder);
+            }
+            var imageFile = Path.Combine(ImagesFolder, productco.ProductImage.FileName);
+            using (var stream = new FileStream(imageFile, FileMode.Create))
+            {
+                productco.ProductImage.CopyToAsync(stream);
+            }
+
+            return Ok();
+
+            //ضيفي كود الصورة 
+
+        }
 
 
         //[HttpGet]
