@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\dtos\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\dtos\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\dtos\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\dtos\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\dtos\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\dtos\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\dtos\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|solutionrelative:task1\\dtos\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF95FD65-3148-4628-BE12-9EBAB4B12ACB}|task1\\task1.csproj|c:\\users\\d\\desktop\\api\\wepapicoretasks\\task4\\task1\\task1\\dtos\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,21 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "task1\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\UsersController.cs",
               "RelativeToolTip": "task1\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAMMAAAAAAAAAAAAuwNYAAAAeAAAA",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAmwNAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T12:31:14.893Z",
               "IsPinned": true,
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "task1\\Controllers\\OrdersController.cs",
@@ -120,20 +120,88 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "userform.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\userform.cs",
-              "RelativeDocumentMoniker": "task1\\DTOs\\userform.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\userform.cs",
-              "RelativeToolTip": "task1\\DTOs\\userform.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "math.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\math.cs",
+              "RelativeDocumentMoniker": "task1\\DTOs\\math.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\math.cs",
+              "RelativeToolTip": "task1\\DTOs\\math.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T13:43:43.604Z"
+              "WhenOpened": "2024-08-27T07:02:32.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "productform.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\productform.cs",
+              "RelativeDocumentMoniker": "task1\\DTOs\\productform.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\productform.cs",
+              "RelativeToolTip": "task1\\DTOs\\productform.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T07:53:22.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Products.cs",
+              "RelativeDocumentMoniker": "task1\\Controllers\\Products.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Products.cs",
+              "RelativeToolTip": "task1\\Controllers\\Products.cs",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAiwNAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T14:00:25.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "task1\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\Product.cs",
+              "RelativeToolTip": "task1\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T07:53:40.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Categories.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Categories.cs",
+              "RelativeDocumentMoniker": "task1\\Controllers\\Categories.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Categories.cs",
+              "RelativeToolTip": "task1\\Controllers\\Categories.cs",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAuwPAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T13:52:14.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "categoryform.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\categoryform.cs",
+              "RelativeDocumentMoniker": "task1\\DTOs\\categoryform.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\categoryform.cs",
+              "RelativeToolTip": "task1\\DTOs\\categoryform.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:21:49.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\Category.cs",
               "RelativeDocumentMoniker": "task1\\Models\\Category.cs",
@@ -146,54 +214,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "productform.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\productform.cs",
-              "RelativeDocumentMoniker": "task1\\DTOs\\productform.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\productform.cs",
-              "RelativeToolTip": "task1\\DTOs\\productform.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Title": "userform.cs",
+              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\userform.cs",
+              "RelativeDocumentMoniker": "task1\\DTOs\\userform.cs",
+              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\userform.cs",
+              "RelativeToolTip": "task1\\DTOs\\userform.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T07:53:22.496Z"
+              "WhenOpened": "2024-08-26T13:43:43.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Products.cs",
-              "RelativeDocumentMoniker": "task1\\Controllers\\Products.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Products.cs",
-              "RelativeToolTip": "task1\\Controllers\\Products.cs",
-              "ViewState": "AQIAAMcAAAAAAAAAAADwv9QAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:00:25.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "task1\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\Product.cs",
-              "RelativeToolTip": "task1\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T07:53:40.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Categories.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Categories.cs",
-              "RelativeDocumentMoniker": "task1\\Controllers\\Categories.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\Categories.cs",
-              "RelativeToolTip": "task1\\Controllers\\Categories.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAcwO8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:52:14.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\User.cs",
               "RelativeDocumentMoniker": "task1\\Models\\User.cs",
@@ -205,19 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "categoryform.cs",
-              "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\categoryform.cs",
-              "RelativeDocumentMoniker": "task1\\DTOs\\categoryform.cs",
-              "ToolTip": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\DTOs\\categoryform.cs",
-              "RelativeToolTip": "task1\\DTOs\\categoryform.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T08:21:49.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "readme-img.jpg",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Uploads\\readme-img.jpg",
               "RelativeDocumentMoniker": "task1\\Uploads\\readme-img.jpg",
@@ -229,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Models\\MyDbContext.cs",
               "RelativeDocumentMoniker": "task1\\Models\\MyDbContext.cs",
@@ -241,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Program.cs",
               "RelativeDocumentMoniker": "task1\\Program.cs",
@@ -253,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\appsettings.json",
               "RelativeDocumentMoniker": "task1\\appsettings.json",
@@ -265,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "task1.csproj",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\task1.csproj",
               "RelativeDocumentMoniker": "task1\\task1.csproj",
@@ -277,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "task1\\WeatherForecast.cs",
@@ -289,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "task1\\Controllers\\WeatherForecastController.cs",
@@ -301,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "task1.http",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\task1.http",
               "RelativeDocumentMoniker": "task1\\task1.http",
@@ -313,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task4\\task1\\task1\\appsettings.Development.json",
               "RelativeDocumentMoniker": "task1\\appsettings.Development.json",

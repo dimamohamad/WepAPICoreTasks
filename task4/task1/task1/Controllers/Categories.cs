@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using task1.DTOs;
-
+using NCalc;
 using task1.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -238,5 +238,28 @@ namespace task1.Controllers
             //ضيفي كود الصورة 
 
         }
+
+        //private object calc(string exp) {
+        
+        //Expression e=new Expression(exp);
+        //    var result = e.Evaluate();
+        //return result;
+        //}
+
+        //[HttpPost("x")]
+        //public IActionResult GET([FromForm] math p ) {
+        
+        //var x = calc(p.expression);
+        //    return Ok(new { x });
+        
+        //}
+        //[HttpGet("x")]
+        //public IActionResult GET1([FromQuery] math p)
+        //{
+
+        //    var x = calc(p.expression);
+        //    return Ok(new { x });
+
+        //}
     }
 }
