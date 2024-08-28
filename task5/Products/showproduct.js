@@ -30,7 +30,8 @@ async function GetProducts() {
       <td>
       
        
-        <a href="../Products/updateproduct.html"  onclick="clic12k(${category.productId})">Edit</a>
+        <a href="../Products/updateproduct.html"class="btn btn-outline-primary"  onclick="clic12k(${category.productId})">Edit</a>
+        <button class="btn btn-outline-danger" onclick="deleteProduct(${category.productId})">Delete</button>
       </td>
     </tr>
     <!-- End example row -->
@@ -55,5 +56,17 @@ function clic12k(id) {
 
 function myfun1(){
     window.location.href="../Products/addproduct.html"
+  }
+
+
+  async function deleteProduct(productId) {
+    var url = `https://localhost:44358/api/Products/DeleteProduct/${productId}`
+    ;
+  
+    let request = await fetch(url, {
+      method: "DELETE",
+    });
+      alert("Product Deleted");
+      window.location.href = "ShowProduct.html";
   }
 GetProducts();

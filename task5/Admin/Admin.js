@@ -23,7 +23,8 @@ async function GetCategories() {
       <td>
       
        
-        <a href="../Category/updatecategory.html"  onclick="myFunction11(${category.categoryId})">Edit</a>
+        <a href="../Category/updatecategory.html" class="btn btn-outline-primary" onclick="myFunction11(${category.categoryId})">Edit</a>
+        <button class="btn btn-outline-danger" onclick="deleteProduct(${category.categoryId})">Delete</button>
       </td>
     </tr>
     <!-- End example row -->
@@ -50,11 +51,22 @@ console.log(result)
       }
       function myFunction11(id){
         localStorage.setItem("categoryid",id);
-        window.location.href="../editCategory/edit.html"
+        window.location.href="../Admin/Admin.html"
       }
 
      function myfun1(){
         window.location.href="../Category/addcategory.html"
+      }
+
+
+      async function deleteProduct(categoryId) {
+        var url = `https://localhost:44358/api/Categories/${categoryId}`;
+      
+        let request = await fetch(url, {
+          method: "DELETE",
+        });
+          alert("Product Deleted");
+          window.location.href = "Admin.html";
       }
 GetCategories();
 

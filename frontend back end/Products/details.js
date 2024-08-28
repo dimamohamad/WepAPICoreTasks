@@ -21,7 +21,9 @@ async function GetProducts() {
     <div class="card-body">
         <h5 class="card-title">${result.productName}</h5>
         <p class="card-text">${result.price}</p>
-        <button class="btn btn-primary" onclick="clic11k(${result.productId})">Details </button>
+        <input type="number" id="quantity" />
+       
+        <button class="btn btn-primary" onclick="Add()">add to Cart </button>
 
     </div>
     </div>
@@ -32,11 +34,43 @@ async function GetProducts() {
 
 
 
+
+
+
+    
+
+
+
+}
+
+async function Add(){
+
+    debugger;
+    var quantity=document.getElementById("quantity")
+    const url ="https://localhost:44358/api/CartItem";
+var data ={
+    cartId:localStorage.getItem("cartid"),
+    productId: localStorage.getItem("productid"),
+    quantity: quantity.value
+  }
+    var resquest= await fetch(url,
+    {
+
+       method:"POST",
+       body:JSON.stringify(data),
+       headers:{
+        'Content-Type':'application/json'
+       }
+
+    
+    });
+window.location.href="../Cart/cart.html"
 }
 
 function clic11k(id){
     localStorage.setItem("productid",id);
-    window.location.href="../products/details.html"
+    window.location.href="../Cart/addCart.html"
   }
 
 GetProducts();
+ // <button class="btn btn-primary" onclick="clic11k(${result.productId})">Add to Cart </button>

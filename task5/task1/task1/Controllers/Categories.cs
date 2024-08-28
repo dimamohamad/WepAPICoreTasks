@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.DataProtection.KeyManagement.Internal;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using task1.DTOs;
@@ -238,5 +239,25 @@ namespace task1.Controllers
             //ضيفي كود الصورة 
 
         }
+
+        //[HttpGet("{x}/{y}")]
+        //public IActionResult det(int x, int y)
+        //{
+        //    if (x+y==30||x==30||y==30)
+        //        return Ok(true);
+        //    return Ok(false);
+        //}
+        //[HttpGet ("API/{z}")]
+        //public IActionResult che(int z)
+        //{ if (z > 0) { 
+        //    if (z % 7 == 0 || z % 3 == 0)
+        //        {
+        //           return Ok(true);
+        //        }
+           
+            
+        //    }
+        //    return Ok(false);
+        //}
     }
 }

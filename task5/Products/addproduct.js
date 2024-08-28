@@ -30,7 +30,8 @@ async function fun() {
 
     });
     var data=respons;
-     window.location.href = "../Products/showproduct.html"
+     
      alert("your product have been added successfully")
+     window.location.href = "showproduct.html"
     
 }
