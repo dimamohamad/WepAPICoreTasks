@@ -1,5 +1,13 @@
 
 
+function  CartId(){
+
+
+    localStorage.setItem("userid",1)
+    localStorage.setItem("cartid",1)
+   
+}
+
 
 
 const n = localStorage.getItem("productid");
@@ -43,9 +51,11 @@ async function GetProducts() {
 
 }
 
+
+
 async function Add(){
 
-    debugger;
+    // debugger;
     var quantity=document.getElementById("quantity")
     const url ="https://localhost:44358/api/CartItem";
 var data ={
@@ -64,13 +74,16 @@ var data ={
 
     
     });
+    alert ("the item added to the cart successfully")
 window.location.href="../Cart/cart.html"
 }
 
 function clic11k(id){
     localStorage.setItem("productid",id);
+    
     window.location.href="../Cart/addCart.html"
   }
 
 GetProducts();
+CartId();
  // <button class="btn btn-primary" onclick="clic11k(${result.productId})">Add to Cart </button>

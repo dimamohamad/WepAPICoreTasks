@@ -77,5 +77,37 @@ namespace task1.Controllers
             _db.SaveChanges();
             return Ok(data);
         }
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id) {
+
+            if (id <= 0) {
+                return BadRequest();
+
+            }
+            var product = _db.CartItems.Find(id);
+            if (product != null)
+            {
+                _db.CartItems.Remove(product);
+                _db.SaveChanges();
+                return NoContent();
+            }
+            return NotFound();
+
+              }
+
+        [HttpPut("{id}")]
+        public IActionResult Update([FromBody] CartitemDto cartitems,int id) {
+
+
+            var item = _db.CartItems.FirstOrDefault(p=>p.CartItemId==id);
+
+
+            item.Quantity = cartitems.Quantity;
+                _db.CartItems.Update(item);
+                _db.SaveChanges();
+
+            return Ok(item);
+        }
+
     }
 }

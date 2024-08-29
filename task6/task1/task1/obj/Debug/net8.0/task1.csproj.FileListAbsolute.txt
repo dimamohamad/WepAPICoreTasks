@@ -825,3 +825,14 @@ C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\obj\Debug\net8.0\refint
 C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\obj\Debug\net8.0\task1.pdb
 C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\obj\Debug\net8.0\task1.genruntimeconfig.cache
 C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\obj\Debug\net8.0\ref\task1.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Microsoft.Extensions.Caching.SqlServer.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\d\Desktop\api\WepAPICoreTasks\task6\task1\task1\bin\Debug\net8.0\Serilog.Sinks.File.dll
