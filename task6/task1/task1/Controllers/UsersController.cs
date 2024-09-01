@@ -100,120 +100,152 @@ namespace task1.Controllers
             return Ok(user);
         }
 
-
-        [HttpDelete("id")]
-        public IActionResult Delete(int id) {
-
-            if (id <= 0)
-            {
-                return BadRequest();
-
-            }
-
-            var x = _db.Orders.Where(p=>p.UserId==id).ToList();
-
-            _db.Orders.RemoveRange(x);
-            _db .SaveChanges();
-
-            var y= _db.Users.Where(_ => _.UserId==id).FirstOrDefault();
-            if (y != null) { 
-            
-            _db.Users.Remove(y);
-                _db .SaveChanges();
-                return NoContent();
-
-            
-            }
-
-            return NotFound();
-
-         
-       
-        }
-
-
-
-        [Route("/api/Users/Deleteuser/{id}")]
-
-        [HttpDelete]
-        public IActionResult DeleteBYId(int id)
+        [HttpPost("register")]
+        public IActionResult Register([FromForm] userform model)
         {
-
-            if (id <= 0)
+            byte[] passwordHash, passwordSalt;
+            PasswordHasher.createPasswordHash(model.Password, out passwordHash, out passwordSalt);
+            var user = new User
             {
-                return BadRequest();
-
-            }
-
-            var x = _db.Orders.Where(p => p.UserId == id).ToList();
-
-            _db.Orders.RemoveRange(x);
-            _db.SaveChanges();
-
-            var y = _db.Users.Where(_ => _.UserId == id).FirstOrDefault();
-            if (y != null)
-            {
-
-                _db.Users.Remove(y);
-                _db.SaveChanges();
-                return NoContent();
-
-
-            }
-
-            return NotFound();
-
-
-
-        }
-
-
-
-        [HttpPost]
-        public IActionResult postuser([FromForm] userform user)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-
-            }
-            var x = new User
-            {
-                Email = user.Email,
-                Username = user.Username,
-                Password = user.Password,
-
-
+                Email = model.Email,
+                Password = model.Password,
+                Username = model.Username,
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt
             };
-          
-
-
-            _db.Users.Add(x);
+            _db.Users.Add(user);
             _db.SaveChanges();
-            return Ok(x);
+            return Ok(user);
         }
-
-        [HttpPut("{id}")]
-        public IActionResult UPDATE([FromForm] userform user, int id)
+        [HttpPost("login")]
+        public IActionResult Login([FromForm]userform model)
         {
-
-
-
-            var c = _db.Users.FirstOrDefault(l => l.UserId == id);
-            c.Username = user.Username;
-            c.Email = user.Email;
-            c.Password = user.Password;
-
-            _db.Users.Update(c);
-            _db.SaveChanges();
-
-
-
-            
-            return Ok();
-
-            //ضيفي كود الصورة 
-
+            var user = _db.Users.FirstOrDefault(x => x.Username == model.Username);
+            if (user == null || !PasswordHasher.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return Unauthorized("Invalid username or password.");
+            }
+            return Ok("User logged in successfully");
         }
+
+
+
+
+
+
+        //[HttpDelete("id")]
+        //public IActionResult Delete(int id) {
+
+        //    if (id <= 0)
+        //    {
+        //        return BadRequest();
+
+        //    }
+
+        //    var x = _db.Orders.Where(p=>p.UserId==id).ToList();
+
+        //    _db.Orders.RemoveRange(x);
+        //    _db .SaveChanges();
+
+        //    var y= _db.Users.Where(_ => _.UserId==id).FirstOrDefault();
+        //    if (y != null) { 
+
+        //    _db.Users.Remove(y);
+        //        _db .SaveChanges();
+        //        return NoContent();
+
+
+        //    }
+
+        //    return NotFound();
+
+
+
+        //}
+
+
+
+        //[Route("/api/Users/Deleteuser/{id}")]
+
+        //[HttpDelete]
+        //public IActionResult DeleteBYId(int id)
+        //{
+
+        //    if (id <= 0)
+        //    {
+        //        return BadRequest();
+
+        //    }
+
+        //    var x = _db.Orders.Where(p => p.UserId == id).ToList();
+
+        //    _db.Orders.RemoveRange(x);
+        //    _db.SaveChanges();
+
+        //    var y = _db.Users.Where(_ => _.UserId == id).FirstOrDefault();
+        //    if (y != null)
+        //    {
+
+        //        _db.Users.Remove(y);
+        //        _db.SaveChanges();
+        //        return NoContent();
+
+
+        //    }
+
+        //    return NotFound();
+
+
+
+        //}
+
+
+
+        //[HttpPost]
+        //public IActionResult postuser([FromForm] userform user)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest();
+
+        //    }
+        //    var x = new User
+        //    {
+
+        //        Username = user.Username,
+        //        Password = user.Password,
+
+
+        //    };
+
+
+
+        //    _db.Users.Add(x);
+        //    _db.SaveChanges();
+        //    return Ok(x);
+        //}
+
+        //[HttpPut("{id}")]
+        //public IActionResult UPDATE([FromForm] userform user, int id)
+        //{
+
+
+
+        //    var c = _db.Users.FirstOrDefault(l => l.UserId == id);
+        //    c.Username = user.Username;
+
+        //    c.Password = user.Password;
+
+        //    _db.Users.Update(c);
+        //    _db.SaveChanges();
+
+
+
+
+        //    return Ok();
+
+        //    //ضيفي كود الصورة 
+
+        //}
     }
 }

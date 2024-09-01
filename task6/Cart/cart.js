@@ -13,7 +13,7 @@ async function allcart() {
         
         <td>${element.product.productName}</td>
         <td>${element.product.price}</td>
-        <td ><input id="quantity" type="number" value="${element.quantity}"/></td>
+        <td ><input id="quantity${element.cartItemId}" type="number" value="${element.quantity}"/></td>
         <td>${element.product.description}</td>
          <td><button class="btn btn-outline-danger" onclick="deleteProduct(${element.cartItemId})">Remove</button><button class="btn btn-outline-primary" onclick="Update(${element.cartItemId})">Update</button></td>
         
@@ -41,10 +41,10 @@ async function deleteProduct(id) {
 
 
 
-async function Update(n) {
+async function Update(id) {
     debugger
-    var url = `https://localhost:44358/api/CartItem/${n}`;
-    var input = document.getElementById("quantity").value;
+    var url = `https://localhost:44358/api/CartItem/${id}`;
+    var input = document.getElementById(`quantity${id}`).value;
     debugger
     event.preventDefault();
     let response = await fetch(url, {

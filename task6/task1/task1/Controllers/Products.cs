@@ -27,6 +27,47 @@ namespace task1.Controllers
             return Ok(product);
         }
 
+
+
+        [HttpGet("/api/last")]
+        public IActionResult order()
+        {
+
+            var order = _db.Products.OrderBy(i => i.ProductName).ToList().TakeLast(5);
+            if (order != null)
+            {
+
+                return Ok(order);
+
+
+            }
+
+
+            return NotFound();
+
+        }
+
+
+
+
+
+        [HttpGet("/api/last/1")]
+        public IActionResult orderx()
+        {
+
+            var order = _db.Products.OrderByDescending(i => i.ProductName).ToList().Take(5).Reverse();
+            if (order != null)
+            {
+
+                return Ok(order);
+
+
+            }
+
+
+            return NotFound();
+
+        }
         [Route("/api/Products/GetAll")]
         [HttpGet]
         public IActionResult GetALL()

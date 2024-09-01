@@ -15,6 +15,8 @@ public partial class MyDbContext : DbContext
     {
     }
 
+    public virtual DbSet<CacheTable> CacheTables { get; set; }
+
     public virtual DbSet<Cart> Carts { get; set; }
 
     public virtual DbSet<CartItem> CartItems { get; set; }
@@ -33,6 +35,15 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<CacheTable>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__CacheTab__3214EC076722E8F1");
+
+            entity.ToTable("CacheTable");
+
+            entity.Property(e => e.Id).HasMaxLength(449);
+        });
+
         modelBuilder.Entity<Cart>(entity =>
         {
             entity.HasKey(e => e.CartId).HasName("PK__Carts__51BCD797E91C83F4");
