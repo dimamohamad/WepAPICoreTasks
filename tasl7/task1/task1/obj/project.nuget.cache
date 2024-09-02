@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y9vZRn2ba3I=",
+  "dgSpecHash": "XyBzbyz1avg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\task6\\task1\\task1\\task1.csproj",
+  "projectFilePath": "C:\\Users\\d\\Desktop\\api\\WepAPICoreTasks\\tasl7\\task1\\task1\\task1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\d\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\d\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

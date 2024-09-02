@@ -118,7 +118,7 @@ namespace task1.Controllers
             return Ok(user);
         }
         [HttpPost("login")]
-        public IActionResult Login([FromForm]userform model)
+        public IActionResult Login([FromForm] userform model)
         {
             var user = _db.Users.FirstOrDefault(x => x.Username == model.Username);
             if (user == null || !PasswordHasher.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
